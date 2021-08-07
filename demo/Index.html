@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="./index.css" rel="stylesheet"/>
+</head>
+<body>
+  <link src="‪Image">
+   
+  <div class="header">
+    <h2>ACME Mobile Store</h2>
+  </div>
+  <br><br>
+  <div class="left">
+    <h3>Manufacturer</h3>
+    <input type="checkbox" class="mobileManufacturer" onclick="getAllCheckedProperties()" value="Apple">Apple</innput>
+    <br>
+    <input type="checkbox" class="mobileManufacturer" onclick="getAllCheckedProperties()" value="Samsung" >Samsung</innput>
+    <br>
+    <input type="checkbox" class="mobileManufacturer"  onclick="getAllCheckedProperties()" value="onePlus">onePlus</innput>
+    <br>
+    <input type="checkbox"  class="mobileManufacturer" onclick="getAllCheckedProperties()" value="Redmi">Redmi</innput>
+    <br><br>
+    <h3>Size</h3>
+    <input type="checkbox" class="mobileStorage" onclick="getAllCheckedProperties()" value="128 Gb">128 Gb</input>
+    <br>
+    <input type="checkbox" class="mobileStorage" onclick="getAllCheckedProperties()" value="64 Gb">64 Gb</input>
+    <br>
+    <input type="checkbox" class="mobileStorage" onclick="getAllCheckedProperties()" value="32 Gb">32 Gb</input>
+    <br><br>
+    <h3>OS</h3>
+    <input type="checkbox" class="mobileOs" onclick="getAllCheckedProperties()" value="Ios">Ios</innput>
+    <br>
+    <input type="checkbox" class="mobileOs" onclick="getAllCheckedProperties()" value="Android">Android</innput>
+    <br>
+    <input type="checkbox" class="mobileOs" onclick="getAllCheckedProperties()" value="Windows">Windows</innput>
+    <br><br>
+    <button onclick="fn1()">Apply Filter</button>
+    <button onclick="clearFilter()">Clear Filter</button>
+  </div>
+  <br>
+  <table border="" height="300px" width="82%">
+    <tbody id="myTable1">
+
+    </tbody>
+
+    <tbody id="myTable2">
+
+    </tbody>
+</table>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="bigImage" src="" alt="">
+        <div id="caption">Mobile Description</div>
+    </div>
+</div>
+
+    <script src="index.js"> </script>
+</body>
+</html>
